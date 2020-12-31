@@ -18,7 +18,7 @@ React router renders everything at front. and path allows to nly display certain
  and switch  stops as soon as the FIRST matched url
  Implement?
  1- wrap whole app in router using {BrowserRouter}
- 2- use Route to seperate url using <Route path="/" exact>
+ 2- use Route to seperate url using <Route path="/" exact> 
 
 useLocation : gives key of the current page ,gives us the location of the current state of page
 exitBeforeEnter : wait for current components to left , only then start next animation of the next components
@@ -27,21 +27,21 @@ function App() {
   const location = useLocation();
 
   return (
-    <div className="App">
+    <div className='App'>
       <GlobalStyle />
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
-          <Route path="/" exact>
+          <Route path='/' exact>
             <AboutUs />
           </Route>
-          <Route path="/work" exact>
+          <Route path='/work' exact>
             <OurWork />
           </Route>
-          <Route path="/work/:id">
+          <Route path='/work/:id'>
             <MovieDetail />
           </Route>
-          <Route path="/contact">
+          <Route path='/contact'>
             <ContactUs />
           </Route>
         </Switch>
