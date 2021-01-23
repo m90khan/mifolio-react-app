@@ -71,7 +71,7 @@ export const lineAnim = {
 };
 
 export const slider = {
-  hidden: { x: '-130%', skew: '0deg' },
+  hidden: { x: '-130%', skew: '45deg' },
   show: {
     x: '100%',
     skew: '0deg',
@@ -84,7 +84,7 @@ export const sliderContainer = {
 };
 
 export const scrollReveal = {
-  hidden: { opacity: 0, scale: 1.2, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 0.5, transition: { duration: 0.5, ease: 'easeIn' } },
   show: {
     opacity: 1,
     scale: 1,

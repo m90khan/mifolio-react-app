@@ -16,16 +16,15 @@ const MovieDetail = () => {
   useEffect(() => {
     const currentMovie = movies.filter((stateMovie) => stateMovie.url === url);
     setMovie(currentMovie[0]);
-    console.log(setMovies);
   }, [movies, url]);
   return (
     <>
-      // only if the movie is avaialble then run
+      {/* only if the movie is avaialble then run */}
       {movie && (
-        <Details exit="exit" variants={pageAnimation} initial="hidden" animate="show">
+        <Details exit='exit' variants={pageAnimation} initial='hidden' animate='show'>
           <HeadLine>
             <h2>{movie.title}</h2>
-            <img src={movie.mainImg} alt="movie" />
+            <img src={movie.mainImg} alt='movie' />
           </HeadLine>
           <Awards>
             {movie.awards.map((award) => (
@@ -37,7 +36,7 @@ const MovieDetail = () => {
             ))}
           </Awards>
           <ImageDisplay>
-            <img src={movie.secondaryImg} alt="movie" />
+            <img src={movie.secondaryImg} alt='movie' />
           </ImageDisplay>
         </Details>
       )}
@@ -104,7 +103,7 @@ const Award = ({ title, description }) => {
   return (
     <AwardStyle>
       <h3>{title}</h3>
-      <div className="line"></div>
+      <div className='line'></div>
       <p>{description}</p>
     </AwardStyle>
   );

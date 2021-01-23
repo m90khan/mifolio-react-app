@@ -14,13 +14,13 @@ const FaqSection = () => {
   const [element, controls] = useScroll();
 
   return (
-    <Faq variants={scrollReveal} ref={element} animate={controls} initial="hidden">
+    <Faq variants={scrollReveal} ref={element} animate={controls} initial='hidden'>
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
       <AnimateSharedLayout>
-        <Toggle title="How Do I Start?">
-          <motion.div className="answer" variants={fade}>
+        <Toggle title='How Do I Start?'>
+          <motion.div className='answer' variants={fade}>
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, tempore odit
@@ -28,8 +28,8 @@ const FaqSection = () => {
             </p>
           </motion.div>
         </Toggle>
-        <Toggle title="WHat Are The Services?">
-          <motion.div className="answer" variants={fade}>
+        <Toggle title='WHat Are The Services?'>
+          <motion.div className='answer' variants={fade}>
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, tempore odit
@@ -37,8 +37,8 @@ const FaqSection = () => {
             </p>
           </motion.div>
         </Toggle>
-        <Toggle title="What Are The Payment Gateways">
-          <motion.div className="answer" variants={fade}>
+        <Toggle title='What Are The Payment Gateways'>
+          <motion.div className='answer' variants={fade}>
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, tempore odit
@@ -46,8 +46,8 @@ const FaqSection = () => {
             </p>
           </motion.div>
         </Toggle>
-        <Toggle title="What Is The Average Cost?">
-          <motion.div className="answer" variants={fade}>
+        <Toggle title='What Is The Average Cost?'>
+          <motion.div className='answer' variants={fade}>
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, tempore odit

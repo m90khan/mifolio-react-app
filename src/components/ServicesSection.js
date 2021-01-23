@@ -8,42 +8,42 @@ import home2 from '../assets/img/home2.png';
 //Styles
 import { About, Description, Image } from '../styles';
 import styled from 'styled-components';
-import { scrollReveal } from '../animation';
+import { scrollReveal, fade } from '../animation';
 import { useScroll } from './useScroll';
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
   return (
-    <Services variants="" animate={controls} initial="hidden" ref={element}>
+    <Services variants={fade} animate={controls} initial='hidden' ref={element}>
       <Description>
         <h2>
           High <span>quality</span> services
         </h2>
         <Cards>
           <Card>
-            <div className="icon">
-              <img alt="efficient" src={clock} />
+            <div className='icon'>
+              <img alt='efficient' src={clock} />
               <h3>Efficient</h3>
             </div>
             <p> Fast and clean code stack</p>
           </Card>
           <Card>
-            <div className="icon">
-              <img alt="teamwork" src={teamwork} />
+            <div className='icon'>
+              <img alt='teamwork' src={teamwork} />
               <h3>Teamwork</h3>
             </div>
             <p>Professional team at your dispense</p>
           </Card>
           <Card>
-            <div className="icon">
-              <img alt="diaphragm" src={diaphragm} />
+            <div className='icon'>
+              <img alt='diaphragm' src={diaphragm} />
               <h3>Diaphragm</h3>
             </div>
             <p>Quality work at good rates</p>
           </Card>
           <Card>
-            <div className="icon">
-              <img alt="affordable" src={money} />
+            <div className='icon'>
+              <img alt='affordable' src={money} />
               <h3>Affordable</h3>
             </div>
             <p>Affordable rates for quality work</p>
@@ -51,7 +51,7 @@ const ServicesSection = () => {
         </Cards>
       </Description>
       <Image>
-        <img alt="camera" src={home2} />
+        <img alt='camera' src={home2} />
       </Image>
     </Services>
   );

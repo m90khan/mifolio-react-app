@@ -8,6 +8,7 @@ import OurWork from './pages/OurWork';
 import MovieDetail from './pages/MovieDetail';
 // allows components to animate when they are removed from the tree
 import { AnimatePresence } from 'framer-motion';
+import ScrollTop from './components/ScrollTop';
 
 // Router
 
@@ -24,11 +25,13 @@ useLocation : gives key of the current page ,gives us the location of the curren
 exitBeforeEnter : wait for current components to left , only then start next animation of the next components
 */
 function App() {
+  // for framer motion to animation based on the pathname /key
   const location = useLocation();
 
   return (
     <div className='App'>
       <GlobalStyle />
+      <ScrollTop />
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
