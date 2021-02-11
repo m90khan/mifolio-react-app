@@ -2,7 +2,7 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/m90khan/mifolio-react-app">
+  <a href="https://mifolio-react-app.vercel.app/">
     <img src="./src/assets/img/clock.svg" alt="Logo" width="120" height="120">
   </a>
 
@@ -13,7 +13,7 @@ Job Portfolio <br />
     <a href="m90khan@gmail.com"><strong>Contact Me</strong></a>
     <br />
     <br />
-    <a href="https://github.com/m90khan/mifolio-react-app">View Demo</a>
+    <a href="https://mifolio-react-app.vercel.app/">View Demo</a>
     
    </p>
 </p>
@@ -30,7 +30,7 @@ Job Portfolio <br />
 
 ### About the Project
 
-Live: https://github.com/m90khan/mifolio-react-app
+Live: https://mifolio-react-app.vercel.app/
 
 <img src="./src/assets/img/Mifolio-Cover.jpg">
 
